@@ -1,0 +1,159 @@
+body{
+    background-color: black;
+}
+@keyframes manisha{
+    from{
+transform:translateX(300px);
+    }
+    to{
+        transform: translate(0);
+
+    }
+}
+
+.anime{
+    animation-name:manisha;
+    animation-duration: 5s;
+    animation-timing-function:ease-in ;
+    animation-delay:0s ;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+    animation-fill-mode:none ;
+    transform:translateX(-150px);
+
+}
+@keyframes cars{
+    from{
+        transform:translateX(200px);
+           }
+            to{
+                transform: translate(0);
+        
+            }
+        }
+        
+        .anime2{
+            animation-name:cars;
+            animation-duration: 5s;
+            animation-timing-function:ease-in ;
+            animation-delay:0s ;
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+            animation-fill-mode:none ;
+            transform:translateX(-150px);
+        
+        }
+
+        @keyframes carsp{
+            from{
+                transform:translateX(700px);
+                    }
+                    to{
+                        transform: translate(0);
+                
+                    }
+                }
+                
+                .anime3{
+                    animation-name:carsp;
+                    animation-duration: 5s;
+                    animation-timing-function:ease-in ;
+                    animation-delay:0s ;
+                    animation-iteration-count: 3;
+                    animation-direction: reverse;
+                    animation-fill-mode:none ;
+                    transform:translateX(-150px);
+                
+                }
+
+                .container {
+                    height: 600px;
+                    width: 400px;
+                    background-color:bisque;
+                    /* margin: 400px; */
+                }
+                
+                .fan {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    background-color: black;
+                    position: relative;
+                    top: 150px;
+                    left: 150px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .pole {
+                    width: 30px; 
+                    height: 400px; 
+                    background-color:black; 
+                    position: absolute;
+                    top: 630px;
+                    left: 190px; 
+                 
+                    z-index: 1; 
+                }
+                
+                .blade1 {
+                    position: absolute;
+                    width: 300px;
+                    height: 20px;
+                    background-color:blue;
+                    border-radius: 20%;
+                    animation: windmill1 1s linear infinite;
+                }
+                
+                .blade2 {
+                    position: absolute;
+                    width: 300px;
+                    height: 20px;
+                    background-color:blue;
+                    border-radius: 20%;
+                    animation: windmill2 1s linear infinite;
+                }
+                .blade3 {
+                    position: absolute;
+                    width: 300px;
+                    height: 20px;
+                    background-color:blue;
+                    border-radius: 20%;
+                    animation: windmill2 1s linear infinite;
+                }
+                
+                @keyframes windmill1 {
+                    0% {
+                        transform: rotate(90deg);
+                    }
+                
+                    
+                    100% {
+                        transform: rotate(270deg);
+                
+                    }
+                }
+                
+                @keyframes windmill2 {
+                    0% {
+                        transform: rotate(180deg);
+                    }
+                
+                    /* 25% {
+                         transform: rotate(180deg); 
+                    }
+                
+                    50% {
+                         transform: rotate(-180deg); 
+                    }
+                
+                    75% {
+                         transform: rotate(-90deg); 
+                    } */
+                
+                    100% {
+                        transform: rotate(360deg);
+                
+                    }
+                }
+                
